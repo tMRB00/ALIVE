@@ -1,10 +1,10 @@
 {
-  {
+  "obj1":{
   "zipcode": 19143,
   "lastName" : "Doe",
   "id"     :  5566
-  }
-  {
+  },
+  "obj2" : {
   "zipcode": 19143,
   "lastName" : "Doe",
   "id"     :  5566
