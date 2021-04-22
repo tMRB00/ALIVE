@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <title>IV Infographic Viewer</title>
+    <!-- Calls charts API Library -->
+    
+    <link rel="stylesheet" type="text/css" href="styleSheet.css" media="screen" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+    
+    
+    <!-- jsFiddle will insert css and js -->
+  </head>
+  <body>
+      <div id="mainGridContainer"> 
+
+      <div id="missionStatement"> 
+      
+        <h1 id="mTitle">IV</h1>
+        <h3 id="mSubTitle">Infopgaphic Viewer</h3>
+        <p id="mStatement">
+          What this project stands for
+        </p>
+      
+      </div>
+
+      <div id="map"></div>
+
+      <div id="metrics_1"></div>
+       
+      <div id="metrics_2"></div>
+       
+      <div id="aboutUs">
+      
+        <h1 id="aTitle">About Us</h1>
+        <h3 id="aSubTitle">Everthing You'd like to know</h3>
+        <p id="aStatement">
+          Some stuff about us and contact information
+        </p>
+
+      </div>
+
+      </div>
+      <!-- <div id="welcome"> </div>
+      <div id="map"></div>
+      <div id="metrics"></div>
+      <div id="info"><h1>Info</h1></div> -->
+      <script src="testBench.js"></script>
+      
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    
+    
+    
+  </body>
+</html>

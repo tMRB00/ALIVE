@@ -1,0 +1,120 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      
+      :root
+      {
+        --color-highlight:#F9F7F0;
+        --color-base:#178CA4;
+        --color-shadow:#072A40;
+        --color-compliment:#18B7BE;
+
+      }
+      body
+      {
+        background-color: var(--color-highlight);
+      }
+      #missionStatement
+      {
+        grid-area: missionStatement;
+        background-color: var(--color-highlight);
+        text-align: center;
+        padding: 20px;
+      }
+      #map
+      {
+        grid-area: map;
+        height: 400px;
+        width: 100%;
+        
+      }
+      #metrics_1
+      {
+        grid-area: metrics_1;
+        background-color: var(--color-highlight);
+        padding: 20px;
+        height: 500px;
+
+        text-align: center;
+      }
+      #metrics_2
+      {
+        grid-area: metrics_2;
+        background-color: var(--color-highlight);
+        padding: 20px;
+        height: 500px;
+      }
+      #aboutUs
+      {
+    
+        grid-area: aboutUs;
+        background-color: var(--color-shadow);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 10px;
+      }
+     
+
+      #mainGridContainer
+      {
+          display: grid;
+          grid:
+          'missionStatement missionStatement'
+          'map map'
+          'metrics_1 metrics_1'
+          'metrics_2 metrics_2'
+          'aboutUs aboutUs';
+          grid-gap: 10px;
+          background-color:var(--color-compliment);
+          padding: 10px;
+      }
+
+      h1
+      {
+          color: var(--color-shadow);
+      }
+
+      h3
+      {
+           color: var(--color-compliment);
+      }
+
+      p
+      {
+           color: var(--color-shadow);
+      }
+
+      #mTitle
+      {
+           color: var(--color-shadow);
+           font-size: 60px;
+      }
+      #mSubTitle
+      {
+           color: var(--color-compliment);
+           font-size: 30px;
+      }
+      #mStatement
+      {
+           color: var(--color-shadow);
+           font-size: 20px;
+      }
+
+      #aTitle
+      {
+           color: var(--color-highlight);
+           font-size: 60px;
+      }
+      #aSubTitle
+      {
+           color: var(--color-compliment);
+           font-size: 30px;
+      }
+      #aStatement
+      {
+           color: var(--color-highlight);
+           font-size: 20px;
+      }
+
+      /* h1 { color: #1627c7; font-family: 'Bitter', serif; font-size: 50px; font-weight: normal; line-height: 54px; margin: 0 0 54px; }
+
+p { color: #333333; font-family: Georgia, serif; font-size: 18px; line-height: 28px; margin: 0 0 28px; } */
