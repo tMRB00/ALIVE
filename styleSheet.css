@@ -32,7 +32,7 @@
         grid-area: metrics_1;
         background-color: var(--color-highlight);
         padding: 20px;
-        height: 500px;
+        height: 700px;
 
         text-align: center;
       }
@@ -41,7 +41,7 @@
         grid-area: metrics_2;
         background-color: var(--color-highlight);
         padding: 20px;
-        height: 500px;
+        height: 700px;
       }
       #aboutUs
       {
