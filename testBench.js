@@ -26,11 +26,25 @@ lightOrange = "#FFA101"
 lightBlue = "#B3DEE5"
 darkBlue = "#31525B"
 
+chQuietRed = "#ff534c"
+chBrash ="#d42850"
+chFlame = "#ff3f00"
+chWood = "#91220f"
+chCharcoal = "#726962"
+chSunrise = "#ffd26c"
+chWhiteHot ="#f5ffff"
+chBlaze ="#fbdb28"
+chTemperate = "#ffac00"
+chMud = "#947c64"
+chSmoke = "#beb1ab"
+
 //loads charts API then draws charts to webpage
 google.charts.load('current', {packages: ['corechart', 'bar']});
 
 google.charts.setOnLoadCallback(ageChart);
 google.charts.setOnLoadCallback(newsChart);
+
+
 
 
 const zipCodes = 
@@ -77,12 +91,12 @@ function ageChart()
   ([
     ['Year', 'respondents'],
     ['2000s', 4, ],
-    ['1990s', 17, ],
-    ['1980s', 12, ],
-    ['1970s', 14, ],
-    ['1960s', 9, ],
-    ['1950s', 13, ],
-    ['1940s', 6, ],
+    ['1990s', 20, ],
+    ['1980s', 13, ],
+    ['1970s', 20, ],
+    ['1960s', 16, ],
+    ['1950s', 21, ],
+    ['1940s', 9, ],
     ['1930s', 2, ],
     ['1920s', 0, ], 
   ]);
@@ -98,15 +112,27 @@ function ageChart()
      
       slices: 
       {
-          0:{color:orange},
-          1:{color:compliment},
-          2:{color:gold},
-          3:{color:pumpkin},
-          4:{color:clay},
-          5:{color:peachSkin},
-          6:{color:ginger},
-          7:{color:amber},
+          0:{color:chSmoke},
+          1:{color:chFlame},
+          2:{color:chTemperate},
+          3:{color:chBrash},
+          4:{color:chQuietRed},
+          5:{color:chCharcoal},
+          6:{color:chBlaze},
+          7:{color:chMud},
           8:{color:compliment},
+
+          // chQuietRed = "#ff534c"
+          // chBrash ="#d42850"
+          // chFlame = "#ff3f00"
+          // chWood = "#91220f"
+          // chCharcoal = "#726962"
+          // chSunrise = "#ffd26c"
+          // chWhiteHot ="#f5ffff"
+          // chBlaze ="#fbdb28"
+          // chTemperate = "#ffac00"
+          // chMud = "#947c64"
+          // chSmoke + "#beb1ab"
       },
       pieSliceTextStyle: {color: 'black',},
       pieSliceBorderColor: highlight,
@@ -133,19 +159,19 @@ function newsChart()
  var data = google.visualization.arrayToDataTable
   ([
     ['Information Source', 'respondent'],
-    ['Social Media', 50],
-    ['Local TV Station', 24],
-    ['Local Radio Station', 16],
-    ['The Philadelphia Inquirer', 14],
-    ['Metro Philadelphia', 5],
-    ['Scoop USA Newspaper',5],
-    ['University City Review',10],
-    ['Other periodical/newspaper',6],
-    ['Email newsletter from local organization',42],
-    ['Word of mouth (neighbors, friends, family)',44],
-    ['Poster/flyer',39],
-    ['Mailer',10],
-    ['Other (please specify)',11],
+    ['Social Media', 59],
+    ['Local TV Station', 28],
+    ['Local Radio Station', 18],
+    ['The Philadelphia Inquirer', 15],
+    ['Metro Philadelphia', 7],
+    ['Scoop USA Newspaper',7],
+    ['University City Review',12],
+    ['Other periodical/newspaper',8],
+    ['Email newsletter from local organization',49],
+    ['Word of mouth (neighbors, friends, family)',68],
+    ['Poster/flyer',48],
+    ['Mailer',12],
+    ['Other (please specify)',18],
 
   ]);
 
@@ -155,7 +181,7 @@ function newsChart()
       height: '85%',
       width: '100%',
 
-      title: 'How Respondents Learn About Special Events And Important News/Updates In Thier Neighborhood',
+      title: 'How Respondents Learn About Special Events And Important News/Updates In Their Neighborhood',
       titleTextStyle:{color: shadow, fontSize: 20,bold: true, },
      
        slices: 
@@ -191,6 +217,7 @@ function newsChart()
   var materialChart = new google.visualization.PieChart(document.getElementById('metrics_2'));
   materialChart.draw(data, options);
 }
+
 
 async function getData()
 {
@@ -229,30 +256,121 @@ function addMarker(location, map) {
   // Add the marker at the clicked location, and add the next-available label
   // from the array of alphabetical characters.
   
-  if(labelIndex == 35|| labelIndex ==0)
+  if(labelIndex == 2)
   {
-    
-    let isOpen = false
+      let isOpen = false
 
-    let infowindow = new google.maps.InfoWindow
-    ({
-        content: contentString,
+      let infowindow = new google.maps.InfoWindow
+      ({
+          content: content19104,
+          
+      });
 
-        
-    });
-
-    const marker = new google.maps.Marker
-    ({
-      position: location,
-      label: zipCodes[labelIndex].toString(),//can be incremented
-      map: map,
-    });
-
-    marker.addListener("click", () => 
+      const marker = new google.maps.Marker
+      ({
+        position: location,
+        label: zipCodes[labelIndex].toString(),//can be incremented
+        map: map,
+      });
+      marker.addListener("click", () => 
     {
+      if(isOpen)
+      {
+        infowindow.close()
+        isOpen = false
+      }
+      else
+      {
+        infowindow.open(map, marker);
+        isOpen = true
+      }
+    });
 
-      
+    labelIndex++;
+  }
+  else if(labelIndex == 23)
+  {
+       let isOpen = false
 
+      let infowindow = new google.maps.InfoWindow
+      ({
+          content: content19131,
+          
+      });
+
+      const marker = new google.maps.Marker
+      ({
+        position: location,
+        label: zipCodes[labelIndex].toString(),//can be incremented
+        map: map,
+      });
+      marker.addListener("click", () => 
+    {
+      if(isOpen)
+      {
+        infowindow.close()
+        isOpen = false
+      }
+      else
+      {
+        infowindow.open(map, marker);
+        isOpen = true
+      }
+    });
+
+    labelIndex++;
+  }
+  else if(labelIndex == 31)
+  {
+
+       let isOpen = false
+
+      let infowindow = new google.maps.InfoWindow
+      ({
+          content: content19139,
+          
+      });
+
+      const marker = new google.maps.Marker
+      ({
+        position: location,
+        label: zipCodes[labelIndex].toString(),//can be incremented
+        map: map,
+      });
+      marker.addListener("click", () => 
+    {
+      if(isOpen)
+      {
+        infowindow.close()
+        isOpen = false
+      }
+      else
+      {
+        infowindow.open(map, marker);
+        isOpen = true
+      }
+    });
+
+    labelIndex++;
+  }
+  else if(labelIndex == 35)
+  {
+       let isOpen = false
+
+      let infowindow = new google.maps.InfoWindow
+      ({
+          content: content19143,
+          
+      });
+
+      const marker = new google.maps.Marker
+      ({
+        position: location,
+        label: zipCodes[labelIndex].toString(),//can be incremented
+        map: map,
+      });
+      marker.addListener("click", () => 
+    {
       if(isOpen)
       {
         infowindow.close()
@@ -283,31 +401,162 @@ function addMarker(location, map) {
 
 
 const contentString =
-    '<div id="content">' +
+    '<div id="content" height="100%">' +
     '<div id="siteNotice">' +
     "</div>" +
-    '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-    '<div id="bodyContent">' +
-    "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
-    "sandstone rock formation in the southern part of the " +
-    "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
-    "south west of the nearest large town, Alice Springs; 450&#160;km " +
-    "(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
-    "features of the Uluru - Kata Tjuta National Park. Uluru is " +
-    "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
-    "Aboriginal people of the area. It has many springs, waterholes, " +
-    "rock caves and ancient paintings. Uluru is listed as a World " +
-    "Heritage Site.</p>" +
-    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-    "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
-    "(last visited June 22, 2009).</p>" +
+    
     "</div>" +
     '<div id="testDiv">'+
       
-    '<img src="testChart.jpg" alt="testChart" width="50%" height="50%">'+
+    '<img src="testChart.jpg" alt="testChart" width="100%" height="100%">'+
     
     '</img>'
     "</div>"+
+    "</div>";
+
+
+const content19104 =
+    '<div id="content">' +
+
+    '<h1 class = "bZipcode">19104</h1>' +
+
+    '<h3 class = "bSubtitle" >How Respondents Learn About Special Events And Important News/Updates In The 19104 Neighborhood</h3>' +
+
+    '<h2 class = "bTotRes" >Total Respondants: <span class = bSpecial>55</span></h2>' +
+
+
+    '<div id="bodyContent">' +
+
+
+    '<p class = "bStats">'+
+
+    "Social Media: <span class = bSpecial> 50%</span> <br><br>"+
+    "Local TV Station: <span class = bSpecial>29%</span> <br><br>"+
+    "Local Radio Station: <span class = bSpecial> 9%</span> <br><br>"+
+    "The Philadelphia Inquirer: <span class = bSpecial> 18%</span> <br><br>"+
+    "Metro Philadelphia: <span class = bSpecial> 3%</span> <br><br>"+
+    "Scoop USA Newspaper: <span class = bSpecial> 3%</span> <br><br>"+
+    "University City Review: <span class = bSpecial> 10%</span> <br><br>"+
+    "Other periodical/newspaper: <span class = bSpecial> 1%</span> <br><br>"+
+    "Email newsletter from local organization: <span class = bSpecial> 54%</span> <br><br>"+
+    "Word of mouth (neighbors, friends, family): <span class = bSpecial> 69%</span> <br><br>"+
+    "Poster/flyer: <span class = bSpecial> 47%</span> <br><br>"+
+    "Mailer: <span class = bSpecial> 12%</span> <br><br>"+
+    "Other (please specify): <span class = bSpecial> 0%</span> <br><br>"+
+
+    '</p>' +
+
+
+    "</div>" +
+
+    "</div>";
+
+const content19131 =
+    '<div id="content">' +
+
+    '<h1 class = "bZipcode">19131</h1>' +
+
+    '<h3 class = "bSubtitle" >How Respondents Learn About Special Events And Important News/Updates In The 19131 Neighborhood</h3>' +
+
+    '<h2 class = "bTotRes" >Total Respondants: <span class = bSpecial>3</span></h2>' +
+
+
+    '<div id="bodyContent">' +
+
+
+    '<p class = "bStats">'+
+
+    "Social Media: <span class = bSpecial> 100%</span> <br><br>"+
+    "Local TV Station: <span class = bSpecial> 30%</span> <br><br>"+
+    "Local Radio Station: <span class = bSpecial> 60%</span> <br><br>"+
+    "The Philadelphia Inquirer: <span class = bSpecial> 0%</span> <br><br>"+
+    "Metro Philadelphia: <span class = bSpecial> 30%</span> <br><br>"+
+    "Scoop USA Newspaper: <span class = bSpecial> 30%</span> <br><br>"+
+    "University City Review: <span class = bSpecial> 30%</span> <br><br>"+
+    "Other periodical/newspaper: <span class = bSpecial> 30%</span> <br><br>"+
+    "Email newsletter from local organization: <span class = bSpecial> 30%</span> <br><br>"+
+    "Word of mouth (neighbors, friends, family): <span class = bSpecial> 100%</span> <br><br>"+
+    "Poster/flyer: <span class = bSpecial> 60%</span> <br><br>"+
+    "Mailer: <span class = bSpecial> 30%</span> <br><br>"+
+    "Other (please specify): <span class = bSpecial> 18.2%</span> <br><br>"+
+
+    '</p>' +
+
+
+    "</div>" +
+
+    "</div>";
+
+const content19139 =
+    '<div id="content">' +
+
+    '<h1 class = "bZipcode">19139</h1>' +
+
+    '<h3 class = "bSubtitle" >How Respondents Learn About Special Events And Important News/Updates In The 19139 Neighborhood</h3>' +
+
+    '<h2 class = "bTotRes" >Total Respondants: <span class = bSpecial>17</span></h2>' +
+
+
+    '<div id="bodyContent">' +
+
+
+    '<p class = "bStats">'+
+
+    "Social Media: <span class = bSpecial> 52%</span> <br><br>"+
+    "Local TV Station: <span class = bSpecial> 23%</span> <br><br>"+
+    "Local Radio Station: <span class = bSpecial> 17%</span> <br><br>"+
+    "The Philadelphia Inquirer: <span class = bSpecial> 5%</span> <br><br>"+
+    "Metro Philadelphia: <span class = bSpecial> 0%</span> <br><br>"+
+    "Scoop USA Newspaper: <span class = bSpecial> 5%</span> <br><br>"+
+    "University City Review: <span class = bSpecial> 17%</span> <br><br>"+
+    "Other periodical/newspaper: <span class = bSpecial> 0%</span> <br><br>"+
+    "Email newsletter from local organization: <span class = bSpecial> 64%</span> <br><br>"+
+    "Word of mouth (neighbors, friends, family): <span class = bSpecial> 94%</span> <br><br>"+
+    "Poster/flyer: <span class = bSpecial> 76%</span> <br><br>"+
+    "Mailer: <span class = bSpecial> 5%</span> <br><br>"+
+    "Other (please specify): <span class = bSpecial> 23.5%</span> <br><br>"+
+
+    '</p>' +
+
+
+    "</div>" +
+
+    "</div>";
+
+const content19143 =
+    '<div id="content">' +
+
+    '<h1 class = "bZipcode">19143</h1>' +
+
+    '<h3 class = "bSubtitle" >How Respondents Learn About Special Events And Important News/Updates In The 19143 Neighborhood</h3>' +
+
+    '<h2 class = "bTotRes" >Total Respondants: <span class = bSpecial>10</span></h2>' +
+
+
+    '<div id="bodyContent">' +
+
+
+    '<p class = "bStats">'+
+
+    "Social Media: <span class = bSpecial> 90%</span> <br><br>"+
+    "Local TV Station: <span class = bSpecial> 20%</span> <br><br>"+
+    "Local Radio Station: <span class = bSpecial> 20%</span> <br><br>"+
+    "The Philadelphia Inquirer: <span class = bSpecial> 20%</span> <br><br>"+
+    "Metro Philadelphia: <span class = bSpecial> 10%</span> <br><br>"+
+    "Scoop USA Newspaper: <span class = bSpecial> 0%</span> <br><br>"+
+    "University City Review: <span class = bSpecial> 20%</span> <br><br>"+
+    "Other periodical/newspaper: <span class = bSpecial> 10%</span> <br><br>"+
+    "Email newsletter from local organization: <span class = bSpecial> 40%</span> <br><br>"+
+    "Word of mouth (neighbors, friends, family): <span class = bSpecial> 50%</span> <br><br>"+
+    "Poster/flyer: <span class = bSpecial> 40%</span> <br><br>"+
+    "Mailer: <span class = bSpecial> 10%</span> <br><br>"+
+    "Other (please specify): <span class = bSpecial> 20%</span> <br><br>"+
+
+    '</p>' +
+
+
+    "</div>" +
+
     "</div>";
 
 
