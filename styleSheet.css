@@ -13,6 +13,7 @@
       {
         background-color: var(--color-highlight);
       }
+      
       #missionStatement
       {
         grid-area: missionStatement;
@@ -23,7 +24,7 @@
       #map
       {
         grid-area: map;
-        height: 400px;
+        height: 600px;
         width: 100%;
         
       }
@@ -68,9 +69,9 @@
           padding: 10px;
       }
 
-      h1
+      /* h1
       {
-          color: var(--color-shadow);
+          color: var(--color-highlight);
       }
 
       h3
@@ -81,7 +82,7 @@
       p
       {
            color: var(--color-shadow);
-      }
+      } */
 
       #mTitle
       {
@@ -96,7 +97,7 @@
       #mStatement
       {
            color: var(--color-shadow);
-           font-size: 20px;
+           font-size: 40px;
       }
 
       #aTitle
@@ -115,6 +116,34 @@
            font-size: 20px;
       }
 
-      /* h1 { color: #1627c7; font-family: 'Bitter', serif; font-size: 50px; font-weight: normal; line-height: 54px; margin: 0 0 54px; }
-
-p { color: #333333; font-family: Georgia, serif; font-size: 18px; line-height: 28px; margin: 0 0 28px; } */
+     .bZipcode
+     {
+               color: var(--color-shadow);
+               text-align: center;
+               font-size: 60px;
+     }
+     .bSubtitle
+     {
+               color: var(--color-shadow);
+               text-align: center;
+               font-size: 20px;
+     }
+     .bTotRes
+     {
+               color: var(--color-shadow);
+               text-align: center;
+               font-size: 20px;
+     }
+      .bStats
+     {
+               color: var(--color-shadow);
+               text-align: left;
+               font-size: 20px;
+     }
+     .bSpecial
+     {
+          color: var(--color-compliment);
+          font-size: 20px;
+          font-weight: bold;
+     }
+      
