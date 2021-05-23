@@ -422,7 +422,7 @@ const content19104 =
 
     '<h3 class = "bSubtitle" >How Respondents Learn About Special Events And Important News/Updates In The 19104 Neighborhood</h3>' +
 
-    '<h2 class = "bTotRes" >Total Respondants: <span class = bSpecial>55</span></h2>' +
+    
 
 
     '<div id="bodyContent">' +
@@ -442,10 +442,11 @@ const content19104 =
     "Word of mouth (neighbors, friends, family): <span class = bSpecial> 69%</span> <br><br>"+
     "Poster/flyer: <span class = bSpecial> 47%</span> <br><br>"+
     "Mailer: <span class = bSpecial> 12%</span> <br><br>"+
-    "Other (please specify): <span class = bSpecial> 0%</span> <br><br>"+
+    "Other: <span class = bSpecial> 0%</span> <br><br>"+
 
     '</p>' +
 
+    '<h2 class = "bTotRes" >Total Respondants: <span class = bSpecial>55</span></h2>' +
 
     "</div>" +
 
@@ -458,7 +459,7 @@ const content19131 =
 
     '<h3 class = "bSubtitle" >How Respondents Learn About Special Events And Important News/Updates In The 19131 Neighborhood</h3>' +
 
-    '<h2 class = "bTotRes" >Total Respondants: <span class = bSpecial>3</span></h2>' +
+    
 
 
     '<div id="bodyContent">' +
@@ -478,10 +479,11 @@ const content19131 =
     "Word of mouth (neighbors, friends, family): <span class = bSpecial> 100%</span> <br><br>"+
     "Poster/flyer: <span class = bSpecial> 60%</span> <br><br>"+
     "Mailer: <span class = bSpecial> 30%</span> <br><br>"+
-    "Other (please specify): <span class = bSpecial> 18.2%</span> <br><br>"+
+    "Other: <span class = bSpecial> 18.2%</span> <br><br>"+
 
     '</p>' +
-
+    
+    '<h2 class = "bTotRes" >Total Respondants: <span class = bSpecial>3</span></h2>' +
 
     "</div>" +
 
@@ -494,7 +496,7 @@ const content19139 =
 
     '<h3 class = "bSubtitle" >How Respondents Learn About Special Events And Important News/Updates In The 19139 Neighborhood</h3>' +
 
-    '<h2 class = "bTotRes" >Total Respondants: <span class = bSpecial>17</span></h2>' +
+    
 
 
     '<div id="bodyContent">' +
@@ -514,10 +516,11 @@ const content19139 =
     "Word of mouth (neighbors, friends, family): <span class = bSpecial> 94%</span> <br><br>"+
     "Poster/flyer: <span class = bSpecial> 76%</span> <br><br>"+
     "Mailer: <span class = bSpecial> 5%</span> <br><br>"+
-    "Other (please specify): <span class = bSpecial> 23.5%</span> <br><br>"+
+    "Other: <span class = bSpecial> 23.5%</span> <br><br>"+
 
     '</p>' +
-
+    
+    '<h2 class = "bTotRes" >Total Respondants: <span class = bSpecial>17</span></h2>' +
 
     "</div>" +
 
@@ -530,7 +533,7 @@ const content19143 =
 
     '<h3 class = "bSubtitle" >How Respondents Learn About Special Events And Important News/Updates In The 19143 Neighborhood</h3>' +
 
-    '<h2 class = "bTotRes" >Total Respondants: <span class = bSpecial>10</span></h2>' +
+    
 
 
     '<div id="bodyContent">' +
@@ -550,10 +553,11 @@ const content19143 =
     "Word of mouth (neighbors, friends, family): <span class = bSpecial> 50%</span> <br><br>"+
     "Poster/flyer: <span class = bSpecial> 40%</span> <br><br>"+
     "Mailer: <span class = bSpecial> 10%</span> <br><br>"+
-    "Other (please specify): <span class = bSpecial> 20%</span> <br><br>"+
+    "Other: <span class = bSpecial> 20%</span> <br><br>"+
 
     '</p>' +
-
+    
+    '<h2 class = "bTotRes" >Total Respondants: <span class = bSpecial>10</span></h2>' +
 
     "</div>" +
 
