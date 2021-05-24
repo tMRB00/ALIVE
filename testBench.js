@@ -442,7 +442,7 @@ const content19104 =
     "Word of mouth (neighbors, friends, family): <span class = bSpecial> 69%</span> <br><br>"+
     "Poster/flyer: <span class = bSpecial> 47%</span> <br><br>"+
     "Mailer: <span class = bSpecial> 12%</span> <br><br>"+
-    "Other: <span class = bSpecial> 0%</span> <br><br>"+
+    "Other (Daily News, Dornsife Center, Powelton Village Civic Association, community events): <span class = bSpecial> 0%</span> <br><br>"+
 
     '</p>' +
 
@@ -516,7 +516,7 @@ const content19139 =
     "Word of mouth (neighbors, friends, family): <span class = bSpecial> 94%</span> <br><br>"+
     "Poster/flyer: <span class = bSpecial> 76%</span> <br><br>"+
     "Mailer: <span class = bSpecial> 5%</span> <br><br>"+
-    "Other: <span class = bSpecial> 23.5%</span> <br><br>"+
+    "Other (Affiliation with colleges & universities, West Philly Local, community meetings): <span class = bSpecial> 23.5%</span> <br><br>"+
 
     '</p>' +
     
@@ -553,7 +553,7 @@ const content19143 =
     "Word of mouth (neighbors, friends, family): <span class = bSpecial> 50%</span> <br><br>"+
     "Poster/flyer: <span class = bSpecial> 40%</span> <br><br>"+
     "Mailer: <span class = bSpecial> 10%</span> <br><br>"+
-    "Other: <span class = bSpecial> 20%</span> <br><br>"+
+    "Other (West Philly local, Instagram Grid magazine): <span class = bSpecial> 20%</span> <br><br>"+
 
     '</p>' +
     
