@@ -429,19 +429,19 @@ const content19104 =
 
 
     '<p class = "bStats">'+
-
-    "Social Media: <span class = bSpecial> 50%</span> <br><br>"+
-    "Local TV Station: <span class = bSpecial>29%</span> <br><br>"+
-    "Local Radio Station: <span class = bSpecial> 9%</span> <br><br>"+
-    "The Philadelphia Inquirer: <span class = bSpecial> 18%</span> <br><br>"+
-    "Metro Philadelphia: <span class = bSpecial> 3%</span> <br><br>"+
-    "Scoop USA Newspaper: <span class = bSpecial> 3%</span> <br><br>"+
-    "University City Review: <span class = bSpecial> 10%</span> <br><br>"+
-    "Other periodical/newspaper: <span class = bSpecial> 1%</span> <br><br>"+
-    "Email newsletter from local organization: <span class = bSpecial> 54%</span> <br><br>"+
+    
     "Word of mouth (neighbors, friends, family): <span class = bSpecial> 69%</span> <br><br>"+
+    "Email newsletter from local organization: <span class = bSpecial> 54%</span> <br><br>"+
+    "Social Media: <span class = bSpecial> 50%</span> <br><br>"+
     "Poster/flyer: <span class = bSpecial> 47%</span> <br><br>"+
+    "Local TV Station: <span class = bSpecial>29%</span> <br><br>"+
+    "The Philadelphia Inquirer: <span class = bSpecial> 18%</span> <br><br>"+
     "Mailer: <span class = bSpecial> 12%</span> <br><br>"+
+    "University City Review: <span class = bSpecial> 10%</span> <br><br>"+
+    "Local Radio Station: <span class = bSpecial> 9%</span> <br><br>"+
+    "Metro Philadelphia: <span class = bSpecial> 3%</span> <br><br>"+
+    "Scoop USA Newspaper: <span class = bSpecial> 3%</span> <br><br>"+  
+    "Other periodical/newspaper: <span class = bSpecial> 1%</span> <br><br>"+
     "Other (Daily News, Dornsife Center, Powelton Village Civic Association, community events): <span class = bSpecial> 0%</span> <br><br>"+
 
     '</p>' +
@@ -468,17 +468,17 @@ const content19131 =
     '<p class = "bStats">'+
 
     "Social Media: <span class = bSpecial> 100%</span> <br><br>"+
-    "Local TV Station: <span class = bSpecial> 30%</span> <br><br>"+
+    "Word of mouth (neighbors, friends, family): <span class = bSpecial> 100%</span> <br><br>"+
+    "Poster/flyer: <span class = bSpecial> 60%</span> <br><br>"+
     "Local Radio Station: <span class = bSpecial> 60%</span> <br><br>"+
-    "The Philadelphia Inquirer: <span class = bSpecial> 0%</span> <br><br>"+
+    "Local TV Station: <span class = bSpecial> 30%</span> <br><br>"+
     "Metro Philadelphia: <span class = bSpecial> 30%</span> <br><br>"+
     "Scoop USA Newspaper: <span class = bSpecial> 30%</span> <br><br>"+
     "University City Review: <span class = bSpecial> 30%</span> <br><br>"+
     "Other periodical/newspaper: <span class = bSpecial> 30%</span> <br><br>"+
     "Email newsletter from local organization: <span class = bSpecial> 30%</span> <br><br>"+
-    "Word of mouth (neighbors, friends, family): <span class = bSpecial> 100%</span> <br><br>"+
-    "Poster/flyer: <span class = bSpecial> 60%</span> <br><br>"+
     "Mailer: <span class = bSpecial> 30%</span> <br><br>"+
+    "The Philadelphia Inquirer: <span class = bSpecial> 0%</span> <br><br>"+
     "Other: <span class = bSpecial> 18.2%</span> <br><br>"+
 
     '</p>' +
@@ -503,21 +503,24 @@ const content19139 =
 
 
     '<p class = "bStats">'+
-
-    "Social Media: <span class = bSpecial> 52%</span> <br><br>"+
-    "Local TV Station: <span class = bSpecial> 23%</span> <br><br>"+
-    "Local Radio Station: <span class = bSpecial> 17%</span> <br><br>"+
-    "The Philadelphia Inquirer: <span class = bSpecial> 5%</span> <br><br>"+
-    "Metro Philadelphia: <span class = bSpecial> 0%</span> <br><br>"+
-    "Scoop USA Newspaper: <span class = bSpecial> 5%</span> <br><br>"+
-    "University City Review: <span class = bSpecial> 17%</span> <br><br>"+
-    "Other periodical/newspaper: <span class = bSpecial> 0%</span> <br><br>"+
-    "Email newsletter from local organization: <span class = bSpecial> 64%</span> <br><br>"+
-    "Word of mouth (neighbors, friends, family): <span class = bSpecial> 94%</span> <br><br>"+
-    "Poster/flyer: <span class = bSpecial> 76%</span> <br><br>"+
-    "Mailer: <span class = bSpecial> 5%</span> <br><br>"+
-    "Other (Affiliation with colleges & universities, West Philly Local, community meetings): <span class = bSpecial> 23.5%</span> <br><br>"+
-
+   "Word of mouth (neighbors, friends, family): <span class = bSpecial> 94%</span> <br><br>"+
+   "Poster/flyer: <span class = bSpecial> 76%</span> <br><br>"+
+   "Email newsletter from local organization: <span class = bSpecial> 64%</span> <br><br>"+
+   "Social Media: <span class = bSpecial> 52%</span> <br><br>"+  
+   "Local TV Station: <span class = bSpecial> 23%</span> <br><br>"+
+   "Local Radio Station: <span class = bSpecial> 17%</span> <br><br>"+
+   "University City Review: <span class = bSpecial> 17%</span> <br><br>"+
+   "Scoop USA Newspaper: <span class = bSpecial> 5%</span> <br><br>"+
+   "The Philadelphia Inquirer: <span class = bSpecial> 5%</span> <br><br>"+
+   "Mailer: <span class = bSpecial> 5%</span> <br><br>"+
+   "Metro Philadelphia: <span class = bSpecial> 0%</span> <br><br>"+
+   "Other periodical/newspaper: <span class = bSpecial> 0%</span> <br><br>"+
+   "Other (Affiliation with colleges & universities, West Philly Local, community meetings): <span class = bSpecial> 23.5%</span> <br><br>"+
+   
+    
+    
+    
+     
     '</p>' +
     
     '<h2 class = "bTotRes" >Total Respondants: <span class = bSpecial>17</span></h2>' +
@@ -542,18 +545,19 @@ const content19143 =
     '<p class = "bStats">'+
 
     "Social Media: <span class = bSpecial> 90%</span> <br><br>"+
+    "Word of mouth (neighbors, friends, family): <span class = bSpecial> 50%</span> <br><br>"+
+    "Email newsletter from local organization: <span class = bSpecial> 40%</span> <br><br>"+
+    "Poster/flyer: <span class = bSpecial> 40%</span> <br><br>"+
     "Local TV Station: <span class = bSpecial> 20%</span> <br><br>"+
     "Local Radio Station: <span class = bSpecial> 20%</span> <br><br>"+
     "The Philadelphia Inquirer: <span class = bSpecial> 20%</span> <br><br>"+
-    "Metro Philadelphia: <span class = bSpecial> 10%</span> <br><br>"+
-    "Scoop USA Newspaper: <span class = bSpecial> 0%</span> <br><br>"+
     "University City Review: <span class = bSpecial> 20%</span> <br><br>"+
     "Other periodical/newspaper: <span class = bSpecial> 10%</span> <br><br>"+
-    "Email newsletter from local organization: <span class = bSpecial> 40%</span> <br><br>"+
-    "Word of mouth (neighbors, friends, family): <span class = bSpecial> 50%</span> <br><br>"+
-    "Poster/flyer: <span class = bSpecial> 40%</span> <br><br>"+
+    "Metro Philadelphia: <span class = bSpecial> 10%</span> <br><br>"+
     "Mailer: <span class = bSpecial> 10%</span> <br><br>"+
+    "Scoop USA Newspaper: <span class = bSpecial> 0%</span> <br><br>"+
     "Other (West Philly local, Instagram Grid magazine): <span class = bSpecial> 20%</span> <br><br>"+
+    
 
     '</p>' +
     
